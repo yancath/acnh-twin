@@ -2,7 +2,7 @@ import React from 'react'
 import '../index.css'
 
 const Villager = ( {villagers, filter} ) => {
-    const filtered =  villagers.filter(villager => villager['birthday-string'].toLowerCase() === filter.toLowerCase().trim())
+    const filtered =  filter.length !== 0 ? villagers.filter(villager => villager['birthday-string'].toLowerCase().includes(filter.toLowerCase().trim())) : []
     console.log('vil', filtered)
 
     const output = () => {
