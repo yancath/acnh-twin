@@ -43,7 +43,10 @@ p {
   max-width: 300px;
   max-height: 220px;
   column-count: 2;
-  margin-right: 20px;
+  /* margin-right: 20px; */
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 .group {
@@ -56,16 +59,18 @@ p {
   color: #404246;
   font-family: Asap, sans-serif;
   margin: auto;
-  padding-bottom: 25px;
+  /* padding-bottom: 25px; */
   text-align: center;
   border-radius: 8px;
   background-color: white;
   max-width: 865px;
-  display: inline;
+  /* display: inline; */
+  display: flex;
 }
 
 .instructions {
   text-align: center;
+  padding: 0 30px;
 }
 
 .info {
@@ -84,10 +89,45 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 10px
 }
 
 @media (max-width: 776px) {
   .villagers {
     margin-bottom: 4% !important;
   }
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-row {
+  flex-direction: row;
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.py-10 {
+  padding: 10px 0px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
 }
