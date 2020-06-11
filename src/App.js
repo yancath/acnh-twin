@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react'
+import axios from 'axios';
 
-function App() {
+import Form from './components/Form'
+import Villager from './components/Villager'
+
+const App = () => {
+  const [filter, setFilter] = useState('')
+  const [villagers, setVillagers] = useState([])
+
+  useEffect(() => {
+    axios.get('http://acnhapi.com/v1/villagers/').then(response => {
+      console.log(Object.values(response.data))
+      setVillagers(Object.values(response.data))
+    })
+  }, [])
+
+  const handleBirthdayChange = (event) => {
+    setFilter(event.target.value)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <Form birthday={filter} handleBirthdayChange={handleBirthdayChange}/>
+      <Villager villagers={villagers} filter={filter}/>
     </div>
-  );
+  )
 }
 
 export default App;
