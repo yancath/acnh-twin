@@ -1,7 +1,6 @@
 html {
   background-color: powderblue;
 }
-
 h1 {
   color: #876143;
   /*text-align: center;*/
@@ -14,7 +13,6 @@ h1 {
   margin-block-start:0;
   margin-block-end:0; 
 }
-
 h2 {
   color: #404246;
   font-family: Asap, sans-serif;
@@ -22,18 +20,15 @@ h2 {
   border-radius: 25px;
   background: #6eb637;
 }
-
 li {
   list-style-type: none;
   display: inline-block;
 }
-
 p {
   font-family: Asap, sans-serif;
   text-align: left;
   color: #404246;
 }
-
 .villagers {
   text-align: center;
   float: left;
@@ -44,6 +39,10 @@ p {
   max-height: 220px;
   column-count: 2;
   margin-right: 20px;
+  /* margin-right: 20px; */
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 .group {
@@ -51,21 +50,24 @@ p {
   display: table;
   margin: 0 auto;
 }
-
 .form {
   color: #404246;
   font-family: Asap, sans-serif;
   margin: auto;
   padding-bottom: 25px;
+  /* padding-bottom: 25px; */
   text-align: center;
   border-radius: 8px;
   background-color: white;
   max-width: 865px;
   display: inline;
+  /* display: inline; */
+  display: flex;
 }
 
 .instructions {
   text-align: center;
+  padding: 0 30px;
 }
 
 .info {
@@ -74,16 +76,15 @@ p {
   color: #404246;
   font-family: Asap, sans-serif;
 }
-
 .inner {
   display: inline-block;
 }
-
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 10px
 }
 
 @media (max-width: 776px) {
@@ -91,3 +92,37 @@ p {
     margin-bottom: 4% !important;
   }
 }
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-row {
+  flex-direction: row;
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.py-10 {
+  padding: 10px 0px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+} 

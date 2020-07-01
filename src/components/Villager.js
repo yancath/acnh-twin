@@ -10,7 +10,8 @@ const Villager = ( {villagers, filter} ) => {
             <li key={villager.id} className='villagers'>
                 <h2>{villager.name['name-USen']}</h2>
                 <br></br>
-                <img src={`https://acnhapi.com/v1/icons/villagers/${villager.id}`}
+                <img 
+                src={`https://acnhapi.com/v1/icons/villagers/${villager.id}`}
                 alt="villager-icon"
                 >
                 </img>
