@@ -9,7 +9,7 @@ const App = () => {
   const [villagers, setVillagers] = useState([])
 
   useEffect(() => {
-    axios.get('http://acnhapi.com/v1/villagers/').then(response => {
+    axios.get('https://acnhapi.com/v1/villagers/').then(response => {
       console.log(Object.values(response.data))
       setVillagers(Object.values(response.data))
     })
