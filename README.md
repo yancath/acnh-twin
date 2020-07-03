@@ -8,6 +8,10 @@ Deployed here @ https://yancath.github.io/acnh-twin/
 
 Light hearted React-based Animal Crossing: New Horizons app that determines which villager(s) have the same birthday as you! This simply uses React.js, CSS3 and CSS3 Flexbox!
 
+## Bugs
+
+There are still some CSS styling errors when used on mobile phpnes (moreso on flexbox as this is VERY new to me)
+
 ## API Reference
 
-Thank you to the lovely people at ACNH API for building and maintaining this RESTful API!
+Thank you to the lovely people at [ACNH API](https://acnhapi.com/) for building and maintaining this RESTful API!
