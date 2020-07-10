@@ -10,7 +10,7 @@ Light hearted React-based Animal Crossing: New Horizons app that determines whic
 
 ## Bugs
 
-There are still some CSS styling errors when used on mobile phpnes (moreso on flexbox as this is VERY new to me)
+There are still some CSS styling errors when used on mobile phpnes (moreso on flexbox as this is very new to me)
 
 ## API Reference
 
